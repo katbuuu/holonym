@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unlock Digital Freedom</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #1a1a2e, #16213e);
+            color: #e0e0e0;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #0f0f1f;
+            color: #9c88ff;
+            padding: 20px;
+            border-bottom: 3px solid #6c5ce7;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            text-shadow: 0 0 5px #9c88ff, 0 0 10px #6c5ce7;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #c4c4f8;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #9c88ff;
+            text-shadow: 0 0 5px #9c88ff, 0 0 10px #6c5ce7;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Challenge Section */
+        .challenge {
+            margin: 30px 0;
+        }
+
+        .lock-container {
+            margin: 20px auto;
+            width: 200px;
+            height: 200px;
+            background: url('https://cdn-icons-png.flaticon.com/512/482/482059.png') no-repeat center;
+            background-size: contain;
+            position: relative;
+            filter: drop-shadow(0 0 10px #6c5ce7);
+        }
+
+        .key {
+            width: 50px;
+            height: 50px;
+            background: url('https://cdn-icons-png.flaticon.com/512/639/639365.png') no-repeat center;
+            background-size: contain;
+            position: absolute;
+            bottom: -20px;
+            left: calc(50% - 25px);
+            cursor: pointer;
+            filter: drop-shadow(0 0 10px #c4c4f8);
+        }
+
+        .mint-token {
+            display: none;
+            background: #6c5ce7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .mint-token:hover {
+            background: #9c88ff;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f0f1f;
+            color: #6c5ce7;
+            padding: 10px;
+            border-top: 3px solid #6c5ce7;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #9c88ff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Miscellaneous */
+        a {
+            color: #9c88ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ol {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        ol li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unlock Digital Freedom</h1>
+        <p>The sad truth: digital privacy is fading. Let's change that.</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>The Challenge</h2>
+            <p>"Unlock" your commitment to digital human rights. Mint a proof of participation and join the rebellion against a world where your data isn’t yours.</p>
+        </section>
+        <section class="challenge">
+            <div class="lock-container">
+                <div class="key" onclick="unlockLock()"></div>
+            </div>
+            <p id="unlockMessage" style="display: none;">The lock is open. The future is yours to secure.</p>
+            <button class="mint-token" onclick="mintToken()">Mint Soulbound Token</button>
+        </section>
+        <section>
+            <h2>How to Participate</h2>
+            <ol>
+                <li>Click on the key to "unlock" the digital lock.</li>
+                <li>Mint your Soulbound Token as proof of your support.</li>
+                <li>Record a short video of yourself performing an unlocking gesture in real life (e.g., opening a lock, door, or box).</li>
+                <li>Post it on social media with <strong>#UnlockHumanRights</strong> and tag <a href="https://twitter.com/0xHolonym" target="_blank">@0xHolonym</a>.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Why This Matters</h2>
+            <p>In the 2000s, we dreamed of a free internet. In 2024, we fight for it. Privacy and security are basic human rights. The power to protect them is in your hands.</p>
+            <p><a href="https://holonym.id" target="_blank">Learn more about Holonym Foundation.</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 Unlock Digital Freedom Campaign. Powered by <a href="https://holonym.id" target="_blank">Holonym Foundation</a>.</p>
+    </footer>
+
+    <script>
+        function unlockLock() {
+            const message = document.getElementById('unlockMessage');
+            const button = document.querySelector('.mint-token');
+            message.style.display = 'block';
+            button.style.display = 'inline-block';
+        }
+
+        function mintToken() {
+            alert("Redirecting to mint your Soulbound Token...");
+            window.location.href = "https://mishti.network"; // Replace with actual minting link
+        }
+    </script>
+</body>
+</html>
